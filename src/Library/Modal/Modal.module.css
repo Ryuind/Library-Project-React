@@ -1,0 +1,66 @@
+.Modal {
+    text-align: center;
+    position: fixed;
+    z-index: 500;
+    background-color: white;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 15%;
+    top: 15%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+
+.Checkbox {
+    margin: -10px 0px 10px 0px;
+    height: 40px;
+    width: 40px;
+}
+
+.Submit {
+    width: 400px;
+    height: 40px;
+    background-color: #dbe5eb;
+    color: #2f7683;
+    border: 2px solid #2f7683;
+    font-size: 20px;
+    border-radius: 4px;
+    
+}
+
+.Submit:hover {
+    transform: scale(1.2);
+    background-color: #2f7683;
+    color: #dbe5eb;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    font-size: 25px;
+}
+
+
+.Text.Invalid {
+    border: 2px dashed red;
+    background-image: linear-gradient(to right, rgb(240, 51, 51), rgb(238, 102, 125));
+}
+
+p{
+    border-radius: 4px;
+}
+
+
+@media (min-width: 600px) {
+    .Modal {
+        width: 500px;
+        left: calc(50% - 250px);
+    }
+}
+
+@media (max-width: 600px) {
+    .Submit {
+        width: 100px;
+    }
+}

@@ -1,0 +1,39 @@
+.ButtonContainer {
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.NewBookButton{
+    margin: 10px 0px 0px 0px;
+    border-radius: 4px;
+    height: 60px;
+    background-color: #2f7683;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #4d696e;
+    color: #dbe5eb;
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px #404344;
+}
+
+.NewBookButton:hover {
+    transform: scale(1.1);
+    background-color: #dbe5eb;
+    color: #2f7683;
+    
+}
+/*animation: enable 0.3s ease-in-out;*/
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

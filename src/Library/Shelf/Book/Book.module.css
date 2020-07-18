@@ -1,0 +1,79 @@
+.Book{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    min-width: 200px;
+    min-height: 250px;
+    background-image: url('../../../book_cover_kawa.png');
+    background-size: 100% 100%;
+    color: lightgoldenrodyellow;
+}
+
+.BookRead{
+    
+    box-shadow: 1px 1px 1px black;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    left: 20%;
+    bottom: 25%;
+    position: absolute;
+}
+.BookRead:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+
+.TitleDiv{
+    width: 150px;
+    margin: 0px 0px 0px 20px;
+}
+
+.BookTitle{
+    font-size: large;
+    word-break: initial;
+    word-wrap: break-word;
+}
+
+.BookTitle:hover {
+    transform: scale(1.1);
+}
+
+.BookAuthor {
+    margin: -10px 0px 0px 0px;
+    word-break: initial;
+    word-wrap: break-word;
+}
+
+
+.Pages{
+    margin: 5px 0px 0px 0px;
+}
+
+.DeleteBtn {
+    border-radius: 4px;
+    position: absolute;
+    background-color: rgb(134, 68, 48);
+    color: rgb(88, 38, 18);
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    height: 20px;
+    font-weight: bold;
+    right: 20%;
+    bottom: 25%;
+}
+
+.DeleteBtn:hover{
+    transform: scale(1.2);
+    background-color: rgb(88, 38, 18);
+    color: white;
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .TitleDiv{
+        margin: 0px 0px 0px 90px;
+    }
+}
